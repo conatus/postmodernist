@@ -24,21 +24,21 @@ if ( function_exists('register_sidebar') )
     ));
 
 // Sets the post excerpt length to 40 characters.
-function modernist_excerpt_length( $length ) {
+function postmodernist_excerpt_length( $length ) {
 	return 40;
 }
-add_filter( 'excerpt_length', 'modernist_excerpt_length' );
+add_filter( 'excerpt_length', 'postmodernist_excerpt_length' );
 
 // Prepares a 'continue reading' link for post excerpts
-function modernist_continue_reading_link() {
+function postmodernist_continue_reading_link() {
 	return '</p><p><a href="'. get_permalink() . '">' . 'Read the rest of this entry &raquo;' . '</a></p>';
 }
 
-// Replaces [...] for (...) in post excerpts and appends modernist_continue_reading_link()
-function modernist_excerpt_more($more) {
-	return ' (&hellip;)' . modernist_continue_reading_link();
+// Replaces [...] for (...) in post excerpts and appends postmodernist_continue_reading_link()
+function postmodernist_excerpt_more($more) {
+	return ' (&hellip;)' . postmodernist_continue_reading_link();
 }
-add_filter('excerpt_more', 'modernist_excerpt_more');
+add_filter('excerpt_more', 'postmodernist_excerpt_more');
 
 // Returns TRUE if more than one page exists. Useful for not echoing .post-navigation HTML when there aren't posts to page
 function show_posts_nav() {
@@ -47,14 +47,14 @@ function show_posts_nav() {
 }
 
 // Removes inline CSS style for Recent Comments widget
-function modernist_remove_recent_comments_style() {
+function postmodernist_remove_recent_comments_style() {
 	global $wp_widget_factory;
 	remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ) );
 }
-add_action( 'widgets_init', 'modernist_remove_recent_comments_style' );
+add_action( 'widgets_init', 'postmodernist_remove_recent_comments_style' );
 
 // Custom commments HTML
-function modernist_comment($comment, $args, $depth) {
+function postmodernist_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
    <div <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
       <div class="comment-avatar">
@@ -73,15 +73,15 @@ function modernist_comment($comment, $args, $depth) {
 <?php }
 
 // Adds a handy 'tag-cloud' class to the Tag Cloud Widget for better styling
-function modernist_tag_cloud($tags) {
+function postmodernist_tag_cloud($tags) {
 	$tag_cloud = '<div class="tag-cloud">' . $tags . '</div>';
 	return $tag_cloud;
 }
-add_action('wp_tag_cloud', 'modernist_tag_cloud');
+add_action('wp_tag_cloud', 'postmodernist_tag_cloud');
 
 // Footer
-function modernist_footer() { ?>
+function postmodernist_footer() { ?>
 			<p>Proudly powered by <a href="http://www.wordpress.org">WordPress</a> and <a href="http://www.rodrigogalindez.com/themes/modernist/" title="Free WordPress theme">Modernist</a>, a theme by <a href="http://www.rodrigogalindez.com" title="Web Designer">Rodrigo Galindez</a>. <a href="<?php bloginfo('rss2_url'); ?>" title="Syndicate this site using RSS"><acronym title="Really Simple Syndication">RSS</acronym> Feed</a>.</p>
 <?php } 
-add_action('wp_footer', 'modernist_footer');
+add_action('wp_footer', 'postmodernist_footer');
 ?>
