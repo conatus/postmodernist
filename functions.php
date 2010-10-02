@@ -14,61 +14,6 @@ if ( function_exists('add_theme_support') ) add_theme_support('post-thumbnails')
 // Adds callback for custom TinyMCE editor stylesheets 
 if ( function_exists('add_editor_style') ) add_editor_style();
 
-// Support for custom headers
-define('HEADER_TEXTCOLOR', '21759B');
-define('HEADER_IMAGE', ''); 
-define('HEADER_IMAGE_WIDTH', 918);
-define('HEADER_IMAGE_HEIGHT', 172);
-
-function modernist_header_style() {
-    ?><style type="text/css">
-        #header {
-			height: 132px;
-            background: url(<?php header_image(); ?>);
-        }
-		
-		#header a {
-		<?php
-		if ( 'blank' == get_header_textcolor() ) { ?>
-		    display: none;
-		<?php } else { ?>
-		    color: #<?php header_textcolor(); ?>;
-		}
-		<?php } ?>
-    </style><?php
-}
-
-function modernist_admin_header_style() {
-    ?><style type="text/css">
-        #headimg {
-            width: 878px !important;
-            height: 132px !important;
-			margin: 0 -20px;
-			padding: 20px;
-			border: 0 none !important;
-        }
-
-		#headimg h1 {
-			margin: 0;
-			font-family: Georgia, "Times New Roman", serif;
-			font-size: 4.8em;
-			font-weight: normal;
-			line-height: normal;
-		}
-		
-		#headimg a {
-			color: #21759B;
-			text-decoration: none;
-		}
-		
-		#desc {
-			display: none;
-		}
-    </style><?php 
-}
-
-if ( function_exists('add_custom_image_header') ) add_custom_image_header('modernist_header_style', 'modernist_admin_header_style');
-
 // Registers a widgetized sidebar and replaces default WordPress HTML code with a better HTML
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
