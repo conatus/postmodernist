@@ -25,7 +25,8 @@
 		}
 		if (window.attachEvent) window.attachEvent("onload", sfHover);      
 		//]]>
-		</script><?php wp_head(); ?>
+		</script>
+		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="wrapper">
