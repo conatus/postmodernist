@@ -1,0 +1,64 @@
+Changelog
+---------
+
+2.5, Aug 25, 2010
+
+* Changed GPL license to v2.0 in readme.txt
+* Fixed a bug that caused to break the layout of posts and pages where comments were closed (comments.php)
+* Fixed a bug that caused to break the layout of posts and pages if registration is required and user is not logged in (comments.php)
+* Added a 'edit this page' link for pages
+* Added a 'edit this comment' link for comments
+* Minor improvements in heading styles
+* Added a function to better style the Tag Cloud widget
+* Adjusted CSS styles for sidebar
+* Adjusted styles for the Calendar Widget
+* Added a link to the official Modernist Facebook page in readme.txt
+* Added styles for threaded comments of level 5
+* Replaced wp_list_categories() for wp_tag_cloud() in the sidebar when no widgets are configured
+* Tweaked automatic post excerpts to produce valid XHTML code  
+* Tweaked default background image
+* Added 'height: auto' to post images for better scaling
+* Cleaned style.css and removed some !important :-)
+
+2.0, Aug 19, 2010
+
+* Added changelog.txt
+* Added support for threaded comments
+* Added GPL 2 license information in styles.css
+* Added body_class() in header.php
+* Added comments template for pages
+* Added navigation for comments
+* Fixed a bug that caused to break the layout of posts and pages with a password
+* Minor touches in the description (style.css)
+* Added post_class() in all templates that required it
+* Added max-width for posts images in style.css
+* Added alignnone class
+* Added margin-bottom for left and right aligned images
+* Styled WordPress Gallery
+* Added table styles
+* Tweaked header styles
+* Added styles for definition lists
+* Tweaked styles for unordered and ordered lists
+* Added styles for the ADDRESS element
+* Added styles for ABBR and ACRONYM elements
+* Added styles for CODE, KBD and TT elements
+* Added styles for PRE and VAR elements
+* Added styles for pingbacks and trackbacks
+* Added styles for lists and blockquotes in comments
+* Added self clearing float technique to each post
+* Changed the 404.php template so now is more descriptive
+* Moved footer text to functions.php
+* Added $content_width in functions.php
+* Added support for post thumbnails
+* Added support for custom headers
+* Added support for WordPress 3.0 menus
+* Added support for automatic feed links
+* Added support for editor style
+* Added JS to focus on search box in search.php and 404.php
+* Added a 40 char limit for automatically generated excerpts
+* Added a 'continue reading' link for automatically generated excerpts
+* Separated IE fixes in a different file (ie-fixes.css)
+
+1.0, Aug 5, 2010
+
+* Initial release
