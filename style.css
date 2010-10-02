@@ -66,24 +66,6 @@ code {
 	font-weight: normal;
 }
 
-/* ----------------------------------------- [ Wrapper ] */
-
-#wrapper {
-	width: 878px;
-	margin: 0 auto;
-	margin-top: 160px;
-	margin-bottom: 40px;
-	height: 1%;
-}
-
-#wrapper:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
-
 /* ------------------------------------------ [ Header ] */
 
 #header-wrapper {
