@@ -3,7 +3,7 @@ by Rodrigo Galindez and Alex Andrews
 
 Thanks for downloading!
 
-Modernist is a flexible, minimal theme focused on great typography. An invisible design to let you and your users focus on your content. Based on the design ideas of Jan Tschichold, Josef MŸller-Brockmann, Dieter Rams, and other modernists. Supports widgets, SEO optimized, clean and documented code, fast to load, WordPress 3.0.1 tested. Works in IE 6 & superior and all versions of Safari/Firefox/Opera. Includes CSS3 buttons.
+Modernist is a flexible, minimal theme focused on great typography. An invisible design to let you and your users focus on your content. Based on the design ideas of Jan Tschichold, Josef Muller-Brockmann, Dieter Rams, and other modernists. Supports widgets, SEO optimized, clean and documented code, fast to load, WordPress 3.0.1 tested. Works in IE 6 & superior and all versions of Safari/Firefox/Opera. Includes CSS3 buttons.
 
 Postmodernist is an adaption of that theme to the [Blueprint CSS](http://www.blueprintcss.org/), with additional bells and whistles for the homepage of [Alex Andrews](http://alexandrews.info). The name Postmodernist refers to the relation between this theme and the Modernist theme, and does not reflect the relation of modernism to postmodernism!
 
@@ -42,7 +42,7 @@ Aug 5, 2010
 Feedback & final words regarding Postmodernist
 -----------------------------------------------
 
-Feedback and bug reports to [alex@recordsonribs.com](mailto:alex@recordsonribs.com)
+Feedback and bug reports to [alex@recordsonribs.com](mailto:alex@recordsonribs.com).
 
 If you found this useful, please donate to Rodrigo as per the instructions above.
 
