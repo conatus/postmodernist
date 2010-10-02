@@ -35,7 +35,7 @@ Please make sure to drop me a line! I'd love to know where and how you are using
 -Rod
 Aug 5, 2010
 
-[http://www.rodrigogalindez.com]()(
+[http://www.rodrigogalindez.com]()
 [http://www.rodrigogalindez.com/wordpress-themes]()
 [http://www.rodrigogalindez.com/wordpress-themes/modernist]()
 
