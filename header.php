@@ -6,10 +6,15 @@
 		<title>
 			<?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?>
 		</title>
+		
+		<!-- Framework CSS -->
+		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+		
+		<!-- Wordpress theme -->
 		<link rel="stylesheet" href="%3C?php%20bloginfo('stylesheet_url');%20?%3E" type="text/css" media="screen" />
-		<!--[if lt IE 8]>
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/ie-fixes.css" type="text/css" media="screen" />
-		<![endif]-->
+
 		<link rel="pingback" href="%3C?php%20bloginfo('pingback_url');%20?%3E" />
 		<script type="text/javascript" charset="utf-8">
 //<![CDATA[
