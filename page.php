@@ -25,6 +25,5 @@
 		
 	<?php endif; ?>
 		
-	<?php comments_template(); ?>	
-	<?php get_sidebar(); ?>
+	<?php comments_template(); ?>
 	<?php get_footer(); ?>
