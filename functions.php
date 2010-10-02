@@ -81,10 +81,7 @@ add_action('wp_tag_cloud', 'modernist_tag_cloud');
 
 // Footer
 function modernist_footer() { ?>
-		<div id="footer">
 			<p>Proudly powered by <a href="http://www.wordpress.org">WordPress</a> and <a href="http://www.rodrigogalindez.com/themes/modernist/" title="Free WordPress theme">Modernist</a>, a theme by <a href="http://www.rodrigogalindez.com" title="Web Designer">Rodrigo Galindez</a>. <a href="<?php bloginfo('rss2_url'); ?>" title="Syndicate this site using RSS"><acronym title="Really Simple Syndication">RSS</acronym> Feed</a>.</p>
-		</div>
-	</div>
 <?php } 
 add_action('wp_footer', 'modernist_footer');
 ?>
