@@ -18,7 +18,7 @@
 	<div class="post-comments" id="comments">
 		<h2><?php comments_number('No comments', 'One comment', '% comments' );?></h2>
 	
-		<?php wp_list_comments('callback=modernist_comment&style=div'); ?>
+		<?php wp_list_comments('callback=postmodernist_comment&style=div'); ?>
 	
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<div class="comment-navigation">
