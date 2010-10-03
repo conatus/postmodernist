@@ -5,7 +5,7 @@
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="post-header">
 				<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-				<p>by <?php the_author(); ?> on <?php the_time('F j, Y') ?></p>
+				<p><?php the_time('F j, Y') ?></p>
 			</div>
 			
 			<?php the_post_thumbnail(array( 150, 150 ), array( 'class' => 'alignleft' )); ?>
