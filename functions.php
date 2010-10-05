@@ -81,7 +81,7 @@ add_action('wp_tag_cloud', 'postmodernist_tag_cloud');
 
 // Footer
 function postmodernist_footer() { ?>
-			<p>Proudly powered by <a href="http://www.wordpress.org">WordPress</a> and <a href="http://www.rodrigogalindez.com/themes/modernist/" title="Free WordPress theme">Modernist</a>, a theme by <a href="http://www.rodrigogalindez.com" title="Web Designer">Rodrigo Galindez</a>. <a href="<?php bloginfo('rss2_url'); ?>" title="Syndicate this site using RSS"><acronym title="Really Simple Syndication">RSS</acronym> Feed</a>.</p>
+			<p>Proudly powered by <a href="http://www.wordpress.org">WordPress</a> and <a href="http://github.com/thewarmjets/postmodernist" title="Postmodernist Theme at Github">Postmodernist</a>, an adaption of the <a href="http://www.rodrigogalindez.com/themes/modernist/">Modernist</a> theme by <a href="http://www.rodrigogalindez.com" title="Web Designer">Rodrigo Galindez</a>. <a href="<?php bloginfo('rss2_url'); ?>" title="Syndicate this site using RSS"><acronym title="Really Simple Syndication">RSS</acronym> Feed</a>.</p>
 <?php } 
-add_action('wp_footer', 'postmodernist_footer');
+add_action('wp_footer', 'postmodernist_footer'); 
 ?>
