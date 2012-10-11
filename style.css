@@ -1,6 +1,5 @@
 /*
 Theme Name: Postmodernist
-Theme URI: http://github.com/thewarmjets/postmodernist
 Description: A flexible, minimal theme focused on great typography. An invisible design to let you and your users focus on your content. Based on the design ideas of Jan Tschichold, Josef Müller-Brockmann, Dieter Rams, and other modernists. Supports widgets, SEO optimized, clean and documented code, fast to load, no plugins required. Hacked a little bit by Alex Andrews to work with Blueprint CSS, for fun and making the ability to add new blocks and generally adapted. The name Postmodernist reflects it relation to the Modernist theme, not a relation to post-modern design! Works in WordPress 2.7 and superior. Works in IE 6 & superior and all versions of Safari/Firefox/Opera. Includes CSS3 buttons.
 Version: 0.1
 Author: Rodrigo Galindez and Alex Andrews
@@ -12,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* -------------------------------- [ General Elements ] */
 
 body {
-	font-family: Georgia, "Times New Roman", serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 62.5%;
 	color: #444;
 }
@@ -45,7 +44,7 @@ a:hover {
 h2.page-title {
 	margin: 0 0 .5em 0 !important;
 	font-size: 2.8em;
-	font-weight: normal;
+	font-weight: bold;
 	color: #21759B;
 }
 
@@ -146,7 +145,7 @@ code {
 .page {
 	margin: 0 0 60px 0;
 	height: 1%;
-	text-align: justify;
+	text-align: left;
 }
 
 .post:after,
@@ -158,7 +157,12 @@ code {
 	visibility: hidden;
 }
 
-.post h1,
+.post h1 {
+	margin: 1.5em 0 .5em 0;
+	font-size: 4em;
+	color: #333;
+}
+
 .post h2 {
 	margin: 1.5em 0 .5em 0;
 	font-size: 2em;
